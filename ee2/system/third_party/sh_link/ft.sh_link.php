@@ -329,7 +329,7 @@ class Sh_link_ft extends EE_Fieldtype {
         {
             $type = $data['type'];
             $entry_data = isset($data[$type]) ? $data[$type] : '';
-            $new_window = isset($data['new_window']) ? 'y' : '';
+            $new_window = (isset($data['new_window'] && $data['new_window'] == 'y') ? 'y' : '';
             $field_name = isset($this->cell_name) ? $this->cell_name : $this->field_name;
 
             if($type == 'file')
@@ -418,7 +418,7 @@ class Sh_link_ft extends EE_Fieldtype {
         {
             // Tag pair, replace vars
             $vars = array(
-                'link_new_window' => isset($data->new_window) ? 'y' : '',
+                'link_new_window' => (isset($data->new_window) && $data->new_window == 'y') ? 'y' : '',
                 'link_type'       => $data->type,
                 'link_url'        => $this->_get_link($data)
             );
