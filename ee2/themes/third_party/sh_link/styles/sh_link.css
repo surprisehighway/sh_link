@@ -1,0 +1,52 @@
+.sh_link_wrap {
+    padding: 10px 15px;
+}
+.sh_link_select {
+    margin: 0 0 10px 0;
+}
+.sh_link_target {
+    display: none;
+    margin: 0 0 10px 0;
+}
+select.sh_link_select, 
+.sh_link_page select {
+    min-width: 140px;
+    max-width: 100%;
+}
+.sh_link_file_thumb {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sh_link_file_thumb:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.sh_link_file_thumb img {
+    display: block;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+.sh_link_file_thumb p {
+    margin: 4px 0 0;
+    display: inline-block;
+}
+.sh_link_file_thumb.no_image img {
+    border: 0;
+    background: none;
+    box-shadow: none;
+}
+.sh_link_btn {
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: none !important;
+    background: rgba(0,0,0,0.09);
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+.sh_link_hide {
+    display: none;
+}
